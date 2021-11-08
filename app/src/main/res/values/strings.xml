@@ -3,7 +3,6 @@
     <string name="imc">IMC:</string>
     <string name="descripcion">Descripcion:</string>
     <string name="indice_basal">Indice Basal:</string>
-    <string name="peso_ideal">Peso Ideal:</string>
     <string name="peso">Peso:</string>
     <string name="edad">Edad</string>
     <string name="indice_de_masa_corporal">Indice de Masa Corporal</string>
@@ -20,4 +19,5 @@
     <string name="sexo">Sexo:</string>
     <string name="metabolismo_basal">Metabolismo Basal:</string>
     <string name="imc_ideal">IMC Ideal:</string>
+    <string name="peso_ideal">Peso Ideal:</string>
 </resources>
