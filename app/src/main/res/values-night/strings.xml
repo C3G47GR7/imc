@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imc">IMC:</string>
+    <string name="descripcion">Descripcion:</string>
+    <string name="indice_basal">Metabolismo Basal:</string>
+    <string name="peso_ideal">Peso Ideal:</string>
+    <string name="edad">Edad:</string>
+    <string name="estatura">Estatura:</string>
+    <string name="peso">Peso:</string>
+    <string name="indice_de_masa_corporal">Indice de Masa Corporal</string>
+    <string name="eliminar_datos">Eliminar Datos</string>
+    <string name="calcular_imc">Calcular IMC</string>
+    <string name="kilos">Kilos</string>
+    <string name="metros">Metros</string>
+    <string name="imc2">imc2</string>
+    <string name="edades">edades</string>
+    <string name="edadd">Edad:</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    <string name="sexo">Sexo:</string>
+    <string name="metabolismo_basal">Metabolismo Basal:</string>
+</resources>
