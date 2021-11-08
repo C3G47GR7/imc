@@ -19,4 +19,5 @@
     <string name="hombre">Hombre</string>
     <string name="sexo">Sexo:</string>
     <string name="metabolismo_basal">Metabolismo Basal:</string>
+    <string name="imc_ideal">IMC Ideal:</string>
 </resources>
