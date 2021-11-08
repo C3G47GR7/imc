@@ -177,7 +177,7 @@
             android:id="@+id/txtideal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/imc_ideal"
+            android:text="@string/peso_ideal"
             android:textSize="24sp"
             android:textStyle="bold" />
 
