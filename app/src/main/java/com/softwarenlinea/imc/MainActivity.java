@@ -37,8 +37,11 @@ public class MainActivity extends AppCompatActivity {
         double nedad= Double.parseDouble(edad.getText().toString());
 
         double resultadoimc= npeso/(naltura*naltura);
+        double resultadopideal= (naltura*100)-100;
 
         imc.setText("IMC: "+ String.format("%.2f",resultadoimc));
+        pesoalturarecomendado.setText("Peso Ideal: "+ resultadopideal);
+
         if(resultadoimc<18.5)
             descripcion.setText("Bajo Peso");
         else
@@ -69,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
         edad.setText("");
         descripcion.setText("");
         pesoalturarecomendado.setText("");
+        indicebasal.setText("");
     }
 }
