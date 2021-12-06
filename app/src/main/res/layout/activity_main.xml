@@ -25,12 +25,37 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tv_identificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Identificación"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_identificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:hint="numero identificaion sin puntos"
+            android:inputType="number"
+            android:minHeight="25dp"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/peso"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
@@ -41,7 +66,7 @@
             android:ems="10"
             android:hint="@string/kilos"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"
+            android:minHeight="25dp"
             android:importantForAutofill="no" />
     </LinearLayout>
 
@@ -56,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/estatura"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
@@ -67,7 +92,7 @@
             android:ems="10"
             android:hint="@string/metros"
             android:inputType="numberDecimal"
-            android:minHeight="48dp"
+            android:minHeight="25dp"
             android:importantForAutofill="no" />
     </LinearLayout>
 
@@ -82,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/edadd"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
@@ -93,7 +118,7 @@
             android:ems="10"
             android:hint="@string/edades"
             android:inputType="number"
-            android:minHeight="48dp"
+            android:minHeight="25dp"
             android:importantForAutofill="no" />
     </LinearLayout>
 
@@ -102,22 +127,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txtsexo"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/rg_sexo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/sexo"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+           >
 
-        <CheckBox
-            android:id="@+id/btnsexo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="false"
-            android:text="@string/mujer" />
+            <RadioButton
+                android:id="@+id/rb_mujer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mujer"
+               />
+
+            <RadioButton
+                android:id="@+id/rb_hombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="Hombre" />
+        </RadioGroup>
+
 
     </LinearLayout>
 
@@ -154,39 +187,55 @@
             android:id="@+id/txtimc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/imc"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtdescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/descripcion"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtbasal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/metabolismo_basal"
-            android:textSize="24sp"
+            android:layout_weight="1"
+            android:text="Metabolismo Basal: "
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtideal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/peso_ideal"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="30"
             android:contentDescription="@string/imc2"
             app:srcCompat="@drawable/imcppal" />
+
+        <Button
+            android:id="@+id/b_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="GUARDAR"
+            android:background="@color/teal_200"
+            android:textSize="13sp"
+            android:onClick="crear"
+            />
     </LinearLayout>
 </LinearLayout>
